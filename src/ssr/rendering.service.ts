@@ -20,7 +20,6 @@ export class RenderingService {
     }
 
     const html = await page.content();
-    await this.browser.close();
 
     const ttRenderMs = Date.now() - start;
     console.info(`Headless rendered page in: ${ttRenderMs}ms`);
